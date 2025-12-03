@@ -1,123 +1,133 @@
 <!DOCTYPE html>
 <html lang="th">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Student GitHub.io</title>
-
-<style>
-    body{
-        font-family: Arial, sans-serif;
-        margin: 40px;
-        line-height: 1.8;
-    }
-    h1{
-        font-size: 36px;
-        margin-bottom: -5px;
-    }
-    h2{
-        color: #d30000;
-        margin-top: 30px;
-    }
-    ul{
-        margin-top: -5px;
-    }
-    .container{
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        gap: 40px;
-    }
-    .section{
-        margin-bottom: 20px;
-    }
-</style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>[ใส่ชื่อของคุณ] - Student Portfolio</title>
+    
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f9fa;
+            color: #333;
+            line-height: 1.6;
+        }
+        .container {
+            max-width: 900px;
+            margin: 30px auto;
+            padding: 20px;
+            background-color: #ffffff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+        header {
+            text-align: center;
+            padding: 20px 0;
+            border-bottom: 2px solid #007bff;
+            margin-bottom: 20px;
+        }
+        header h1 {
+            color: #007bff;
+            margin-bottom: 5px;
+        }
+        header p {
+            color: #6c757d;
+        }
+        section {
+            margin-bottom: 30px;
+            padding: 15px;
+            border-left: 5px solid #007bff;
+            background-color: #fefefe;
+        }
+        section h2 {
+            color: #007bff;
+            border-bottom: 1px dashed #ced4da;
+            padding-bottom: 5px;
+            margin-top: 0;
+        }
+        ul {
+            padding-left: 20px;
+        }
+        .project-item {
+            margin-bottom: 15px;
+            border-bottom: 1px dotted #e9ecef;
+            padding-bottom: 10px;
+        }
+        .profile-pic {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-top: 15px;
+            border: 3px solid #007bff;
+        }
+    </style>
 </head>
-
 <body>
 
-<h1>หน้าแรก GitHub.io ของนักศึกษา</h1>
-
 <div class="container">
-
-    <!-- 1. แนะนำตัว -->
-    <div class="section">
-        <h2>(แนะนำตัว)</h2>
-        <ul>
-            <li>ศรนรินทร์ ยอดแก้ว</li>
-            <li>รูปโปรไฟล์ (เป็นทางการเล็กน้อย)</li>
-            <li>คณะวิทยาศาสตร์ / มหาวิทยาลัยราชภัฎอุดรธานี / สาขาวิทยาการคอมพิวเตอร์</li>
-        </ul>
-    </div>
-
-    <!-- Soft skills -->
-    <div class="section">
-        <h2>Soft Skills</h2>
-        <ul>
-            <li>การสื่อสาร</li>
-            <li>การทำงานเป็นทีม</li>
-            <li>การแก้ปัญหา</li>
-        </ul>
-    </div>
-
-    <!-- 2. ทักษะ -->
-    <div class="section">
+    <header>
+        <img src="https://pantip.com/topic/34934226" alt="Profile Picture" class="profile-pic">
+        
+        <h1>[ใส่ชื่อ-นามสกุล] (Your Name)</h1>
+        <p>นักศึกษาปีที่ **[3]** | สาขา **[วิทยาการคอมพิวเตอร์]** | **[มหาวิทยาลัยราชภัฏอุดรธานี]**</p>
+        <p>ความสนใจเฉพาะทาง: **AI, Web Dev, Cybersecurity, Data Science**</p>
+    </header>
+    
+    <section id="skills">
         <h2>2. ทักษะ (Skills)</h2>
+        <h3>แบ่งหมวดหมู่ให้ชัดเจน</h3>
         <ul>
-            <li>Programming: Python, Java, HTML/CSS, JavaScript</li>
-            <li>Data:  SQL</li>
-           
+            <li>**Programming:** Python, Java, HTML/CSS, JavaScript</li>
+            <li>**AI & Data:** TensorFlow, scikit-learn, Power BI, SQL</li>
+            <li>**Tools:** Git, VS Code, Figma, Google Colab</li>
+            <li>**Soft Skills:** การสื่อสาร, การทำงานเป็นทีม, การแก้ปัญหา</li>
         </ul>
-    </div>
+    </section>
 
-    <!-- 3. ผลงาน -->
-    <div class="section">
+    <section id="projects">
         <h2>3. ผลงานที่ผ่านมา (Projects / Portfolio)</h2>
-        <p>ตัวอย่าง:</p>
-        <ul>
-            
-        </ul>
+        <div class="project-item">
+            <h3>Website Project: ระบบจองห้องประชุมออนไลน์</h3>
+            <p><strong>วัตถุประสงค์:</strong> พัฒนาระบบ Full-Stack เพื่อจัดการการจองห้องประชุมอย่างมีประสิทธิภาพ</p>
+            <p><strong>ลิงก์ไปถึง:</strong> <a href="#">GitHub Repository</a> | <a href="#">Demo/วิดีโอสั้นๆ</a></p>
+        </div>
+        
+        <div class="project-item">
+            <h3>Data Project: AI ทำนายโรคเบาหวานด้วย Machine Learning</h3>
+            <p><strong>วัตถุประสงค์:</strong> ใช้โมเดล Machine Learning (Python/scikit-learn) เพื่อทำนายความเสี่ยงโรคเบาหวาน</p>
+            <p><strong>ลิงก์ไปถึง:</strong> <a href="#">GitHub Repository</a> | <a href="#">ภาพ Screenshot สวยๆ 1-2 รูป</a></p>
+        </div>
+    </section>
 
-        <p>สิ่งที่ควรใส่:</p>
-        <ul>
-            <li>ลิงก์ GitHub Repository</li>
-            <li>Demo หรือวิดีโอสั้น ๆ</li>
-            <li>ภาพ Screenshot สวย ๆ</li>
-        </ul>
-    </div>
-
-    <!-- 4. การศึกษา -->
-    <div class="section">
+    <section id="education">
         <h2>4. การศึกษา (Education)</h2>
-        <ul>
-            <li>คณะวิทยาศาสตร์ สาขาวิทยาการคอมพิวเตอร์</li>
-            <li>มหาวิทยาลัยราชภัฏอุดรธานี</li>
-            <li>2566–ปัจจุบัน</li>
-        </ul>
-    </div>
+        <p><strong>2566 - ปัจจุบัน:</strong> คณะวิทยาศาสตร์ สาขาวิทยาการคอมพิวเตอร์</p>
+        <p>มหาวิทยาลัยราชภัฏอุดรธานี</p>
+    </section>
 
-    <!-- 5. กิจกรรม -->
-    <div class="section">
-        <h2>5. กิจกรรมและผลงานอื่น ๆ (Activities / Achievements)</h2>
+    <section id="achievements">
+        <h2>5. กิจกรรมและผลงานอื่นๆ (Activities / Achievements)</h2>
         <ul>
-            
+            <li>ผู้เข้าร่วมอบรม "AI for Beginners by Microsoft"</li>
+            <li>เข้าร่วมแข่งขัน UDRU Hackathon 2025</li>
+            <li>ได้รับรางวัลชนะเลิศโครงงานด้าน IoT</li>
         </ul>
-    </div>
-
-    <!-- 6. ติดต่อ -->
-    <div class="section">
+    </section>
+    
+    <section id="contact">
         <h2>6. ติดต่อ (Contact)</h2>
-        <ul>
-            <li>Email (มหาวิทยาลัยหรือ Gmail)</li>
-            <li>GitHub, LinkedIn, Facebook หรือ Portfolio</li>
-            <li>จังหวัดที่อาศัย</li>
-        </ul>
-    </div>
+        <p>Email: <a href="mailto:your_email@gmail.com">your_email@gmail.com</a> (มหาวิทยาลัยหรือ Gmail)</p>
+        <p>LinkedIn: <a href="#">your LinkedIn profile</a></p>
+        <p>Portfolio ที่อยู่จริง: [หากมี]</p>
+    </section>
 
-    <!-- 7. วัตถุประสงค์ -->
-    <div class="section">
-        <h2>7. วัตถุประสงค์เสริม (Career Interest)</h2>
-        <p>เป้าหมายในอนาคต นักวิทยาการข้อมูล, นักพัฒนาเว็บ ฯลฯ</p>
-    </div>
+    <section id="career-interest">
+        <h2>7. องค์ประกอบเสริม</h2>
+        <p><strong>เป้าหมายในอนาคต:</strong> ต้องการทำงานในตำแหน่ง Data Scientist หรือ Full-Stack Developer</p>
+    </section>
 
 </div>
 
